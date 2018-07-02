@@ -31,6 +31,7 @@ import org.springframework.lang.Nullable;
  * @since 07.07.2003
  * @see org.springframework.beans.factory.config.ConfigurableBeanFactory#setParentBeanFactory
  */
+//由bean工厂实现的子接口的层次结构
 public interface HierarchicalBeanFactory extends BeanFactory {
 
 	/**
@@ -48,6 +49,7 @@ public interface HierarchicalBeanFactory extends BeanFactory {
 	 * @return whether a bean with the given name is defined in the local factory
 	 * @see BeanFactory#containsBean
 	 */
+//	判断在本地工厂容器中是否包含指定bean名称，忽略父工厂容器
 	boolean containsLocalBean(String name);
 
 }

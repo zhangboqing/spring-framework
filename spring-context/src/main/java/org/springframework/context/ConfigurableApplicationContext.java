@@ -49,6 +49,7 @@ public interface ConfigurableApplicationContext extends ApplicationContext, Life
 	 * @see org.springframework.web.context.ContextLoader#CONFIG_LOCATION_PARAM
 	 * @see org.springframework.web.servlet.FrameworkServlet#setContextConfigLocation
 	 */
+//	指定配置路径分隔符
 	String CONFIG_LOCATION_DELIMITERS = ",; \t\n";
 
 	/**
@@ -157,6 +158,7 @@ public interface ConfigurableApplicationContext extends ApplicationContext, Life
 	 * @throws IllegalStateException if already initialized and multiple refresh
 	 * attempts are not supported
 	 */
+//	容器启动方法
 	void refresh() throws BeansException, IllegalStateException;
 
 	/**

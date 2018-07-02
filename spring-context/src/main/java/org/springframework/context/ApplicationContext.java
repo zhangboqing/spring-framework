@@ -55,6 +55,7 @@ import org.springframework.lang.Nullable;
  * @see org.springframework.beans.factory.BeanFactory
  * @see org.springframework.core.io.ResourceLoader
  */
+//为应用程序提供配置的中央接口。当应用程序运行时，这是只读的，但也可以被重新加载如果实现支持此功能。
 public interface ApplicationContext extends EnvironmentCapable, ListableBeanFactory, HierarchicalBeanFactory,
 		MessageSource, ApplicationEventPublisher, ResourcePatternResolver {
 
@@ -81,6 +82,7 @@ public interface ApplicationContext extends EnvironmentCapable, ListableBeanFact
 	 * Return the timestamp when this context was first loaded.
 	 * @return the timestamp (ms) when this context was first loaded
 	 */
+//	获取容器启动时间
 	long getStartupDate();
 
 	/**
