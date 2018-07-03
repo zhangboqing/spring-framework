@@ -43,6 +43,7 @@ import java.io.IOException;
  * @see #getConfigLocations
  * @see org.springframework.beans.factory.xml.XmlBeanDefinitionReader
  */
+//chinese remark
 public abstract class AbstractXmlApplicationContext extends AbstractRefreshableConfigApplicationContext {
 
 	private boolean validating = true;
